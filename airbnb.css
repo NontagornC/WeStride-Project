@@ -1,0 +1,603 @@
+* {
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.top-of-page {
+    width: 100%;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0px;
+    padding: 20px 40px;
+}
+
+.top-of-page>p:hover {
+    cursor: pointer;
+}
+
+.top-of-page>p {
+    margin: 0px;
+    color: white;
+}
+
+.header-page {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/background-Image.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 725px;
+    padding: 0px 80px;
+}
+
+.logo-main-container {
+    display: grid;
+    width: 100%;
+    height: 80px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.logo-main-container>.logo-section>.logo-section-container:hover {
+    cursor: pointer;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section-container {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    color: white;
+    background: none;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    width: 68.25px;
+    height: 27px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-section>.home,
+.home-section>.location,
+.home-section>.about-us {
+    padding: 10px 10px;
+    font-size: 18px;
+
+}
+
+.home-section>.home:hover,
+.home-section>.location:hover,
+.home-section>.about-us:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+
+}
+
+.become-host {
+    width: 133px;
+    height: 39px;
+    padding: 10px 10px;
+}
+
+.become-host:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+}
+
+
+.world {
+    width: 36px;
+    height: 39px;
+    padding: 10px 10px;
+}
+
+.world:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.profile-btn-container {
+    display: flex;
+    width: 97px;
+    height: 39px;
+    padding: 10px 10px;
+}
+
+.profile-btn-container>button>svg {
+    cursor: pointer;
+}
+
+.profile-btn-container>button {
+    width: 77px;
+    height: 42px;
+    padding: 1px 6px;
+    border-radius: 110px;
+    border: 0px;
+    position: absolute;
+    top: 76px;
+}
+
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 66px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 850px;
+    height: 66px;
+    margin: 0px 213px;
+    border-radius: 110px;
+    background-color: #FFFFFF;
+}
+
+.search-location-container:hover,
+.check-in:hover,
+.check-out:hover,
+.guests:hover {
+    background-color: hsl(0, 0%, 50%, 0.3);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.search-location-container {
+    display: flex;
+    flex-direction: column;
+    width: 257.25px;
+    height: 38px;
+    border-right: 1px solid hsl(0, 0%, 50%, 0.3);
+}
+
+.search-location-container>.location-1 {
+    width: 179.36px;
+    height: 19px;
+    margin: 0px 38.483px;
+}
+
+.search-location-container>input {
+    width: 183.36px;
+    height: 18px;
+    margin: auto;
+    padding: 1px 2px;
+    border-radius: 2px;
+    border: 0px;
+    background: none;
+}
+
+.check-in {
+    display: flex;
+    flex-direction: column;
+    width: 186px;
+    height: 38px;
+    border-right: 1px solid hsl(0, 0%, 50%, 0.3);
+}
+
+.check-in>.check-in-1 {
+    width: 129.50px;
+    height: 19px;
+    margin: 0px 27.766px;
+}
+
+.check-in>input {
+    width: 133.53px;
+    height: 18px;
+    margin: auto;
+    padding: 1px 2px;
+    border-radius: 2px;
+    border: 0px;
+    background: none;
+}
+
+.check-out {
+    display: flex;
+    flex-direction: column;
+    width: 186.03px;
+    height: 38px;
+    border-right: 1px solid hsl(0, 0%, 50%, 0.3);
+}
+
+.check-out>.check-out-1 {
+    width: 129.50px;
+    height: 19px;
+    margin: 0px 27.766px;
+}
+
+.check-out>input {
+    width: 133.53px;
+    height: 18px;
+    margin: auto;
+    padding: 1px 2px;
+    border-radius: 2px;
+    border: 0px;
+    background: none;
+}
+
+.guests {
+    display: flex;
+    flex-direction: column;
+    width: 156.59px;
+    height: 38px;
+}
+
+.guests>.guests-1 {
+    width: 109.61px;
+    height: 19px;
+    margin: 0px 23.5px;
+}
+
+.guests>input {
+    width: 113.61px;
+    height: 18px;
+    margin: auto;
+    padding: 1px 2px;
+    border-radius: 2px;
+    border: 0px;
+    background: none;
+}
+
+.search-btn {
+    display: flex;
+    width: 64.06px;
+    height: 45px;
+}
+
+.search-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #fa215b;
+    border-radius: 50%;
+    border: 0px;
+}
+
+.search-btn-container:hover {
+    cursor: pointer;
+    background-color: #cf1f4e;
+}
+
+
+.caption-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 625px;
+}
+
+.caption-container>span {
+    width: 400px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.caption-container>.explore-btn {
+    width: 155px;
+    height: 32px;
+    margin-top: 15px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+}
+
+.caption-container>.explore-btn:hover {
+    cursor: pointer;
+}
+
+.travel-location-main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0px;
+    padding: 0px 80px;
+}
+
+.travel-location-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 170px;
+    margin: 10px 0px;
+}
+
+.travel-location {
+    display: flex;
+    width: 25%;
+    height: 70px;
+    margin-top: 15px;
+    padding-right: 13px;
+}
+
+.travel-location:hover {
+    cursor: pointer;
+}
+
+.travel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+
+.travel-pic>img {
+    border-radius: 10px;
+}
+
+.accomodations-container {
+    display: flex;
+    justify-content: center;
+}
+
+.accomodations-page {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 80px;
+    margin-bottom: 50px;
+}
+
+.accomodations-text>p {
+    width: 100%;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0px;
+}
+
+.accomodations-container {
+    display: flex;
+    width: auto;
+}
+
+.accomodations-box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-right: 13px;
+
+}
+
+.accomodations-box:hover {
+    cursor: pointer;
+}
+
+.accomodations-box>img {
+    border-radius: 10px;
+}
+
+.accomodations-box>span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.experiences-page {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 50px 80px;
+}
+
+.unique-experiences-text>p {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.meet-with-local-text>p {
+    color: white;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.experiences-container {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.experiences-pic-box {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    padding-right: 13px;
+}
+
+.experiences-pic-box:hover {
+    cursor: pointer;
+}
+
+.experiences-pic-box>span:nth-child(2) {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+
+}
+
+.experiences-pic-box>span:nth-child(3) {
+    color: white;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.experiences-pic-box>img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.part-of-airbnb-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0px;
+    padding: 0px 80px;
+}
+
+.part-of-airbnb-text>p {
+    margin: 0px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.part-of-airbnb-container {
+    display: flex;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.part-of-airbnb-pic-box>img {
+    border-radius: 10px;
+}
+
+.part-of-airbnb-pic-box {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    padding-right: 13px;
+}
+
+.part-of-airbnb-pic-box:hover {
+    cursor: pointer;
+}
+
+.part-of-airbnb-pic-box>span {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+    border-top: 1.11px;
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 50%, 0.3);
+    ;
+}
+
+.more-info-container {
+    display: flex;
+    width: 100%;
+    margin: 10px 0px;
+
+}
+
+.info-page {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 16px 0px;
+    padding-right: 13px;
+}
+
+.info-page>b {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.info-page>.info {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.info-page>.info:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.blank-session {
+    height: 1px;
+    width: 100%;
+    background-color: hsl(0, 0%, 50%, 0.3);
+    margin: 8px 0px;
+}
+
+.bottom-page {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.last-footer-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 14px;
+}
+
+.policy-box {
+    display: flex;
+}
+
+.bottom-page>.language {
+    font-size: 14px;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.more-contract-pic {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.language:hover,
+.more-contract-pic:hover {
+    cursor: pointer;
+}
+
+.bottom-page>.last-footer-1>.policy-box>.policy-box-1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
