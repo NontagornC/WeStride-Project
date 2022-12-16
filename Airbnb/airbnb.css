@@ -38,7 +38,7 @@ body {
 .header-page {
     display: flex;
     flex-direction: column;
-    background-image: url(/asset/background-Image.webp);
+    background-image: url(/Airbnb/asset/background-Image.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
